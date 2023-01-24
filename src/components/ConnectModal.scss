@@ -1,0 +1,52 @@
+@import '../styles/variables';
+
+.wallet-connect-modal {
+  position: relative;
+  background: #fff;
+  padding: 20px;
+  border-radius: 16px;
+  min-width: 300px;
+  font-family: 'Poppins';
+  font-weight: 500;
+  font-size: 19px;
+  color: #000;
+
+  .wallet-connect-close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(30%, -30%);
+    background: #686e92;
+    border-radius: 50%;
+    overflow: hidden;
+    width: 38px;
+    height: 38px;
+  }
+
+  .wallet-connect-inner {
+    display: flex;
+    flex-direction: column;
+    gap: 11px;
+
+    .wallet-connector-button {
+      border: 1px solid #e1e2e2;
+      border-radius: 12px;
+      transition: all 0.2s ease-in-out;
+
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      padding: 13px 18px;
+
+      img {
+        width: 34px;
+        height: 34px;
+      }
+
+      &:hover {
+        background: $green-400;
+        color: #fff;
+      }
+    }
+  }
+}

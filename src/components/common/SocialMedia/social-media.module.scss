@@ -1,0 +1,23 @@
+@import '../../../styles/variables.scss';
+
+.socialIcons {
+  display: flex;
+  justify-content: flex-end;
+  gap: 16px;
+
+  @media screen and (max-width: 768px) {
+    gap: 20px;
+    padding-top: 20px;
+    justify-content: center;
+  }
+
+  .icon {
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+    @media screen and (max-width: 768px) {
+      width: 32px;
+      height: 32px;
+    }
+  }
+}

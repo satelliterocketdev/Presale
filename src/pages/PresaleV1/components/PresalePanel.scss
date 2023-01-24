@@ -1,0 +1,447 @@
+@import '../../../styles/variables';
+
+@keyframes zoom-in {
+  from {
+    transform: scale(0);
+  }
+
+  to {
+    transform: scale(1);
+  }
+}
+
+.presale-panel {
+  padding: 30px 16px 100px;
+  max-width: 677px;
+  width: 100%;
+  margin: 0 auto;
+
+  @media screen and (max-width: $breakpoint-md) {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  .modal-overlay {
+    position: fixed;
+    padding: 20px;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+
+    .modal-content {
+      padding: 20px 4px;
+      position: relative;
+      width: 100%;
+      height: 80vh;
+      max-width: 860px;
+      color: #000;
+      background-color: #fff;
+      border-radius: 8px;
+      overflow: auto;
+      animation: zoom-in .25s ease-out;
+
+      button {
+        position: absolute;
+        right: 16px;
+        top: 0;
+        font-size: 48px;
+        cursor: pointer;
+      }
+    }
+  }
+
+  .presale-heading-img {
+    width: 100%;
+    margin-bottom: 50px;
+
+    @media screen and (max-width: $breakpoint-md) {
+      margin-bottom: 24px;
+    }
+  }
+
+  .presale-panel-wrapper {
+    position: relative;
+    padding: 32px 13px 28px;
+    background: #152348;
+
+    @media screen and (max-width: $breakpoint-md) {
+      padding: 20px 14px;
+    }
+
+    .presale-horizontal-border {
+      width: 100%;
+      height: 3px;
+      position: absolute;
+
+      &.presale-top-border {
+        top: 0;
+      }
+
+      &.presale-bottom-border {
+        bottom: 0;
+        height: 15px;
+        left: 50%;
+        transform: translate(-50%, 50%);
+      }
+    }
+
+    .presale-vertical-border {
+      height: 100%;
+      width: 3px;
+      position: absolute;
+
+      &.presale-left-border {
+        left: 0;
+      }
+
+      &.presale-right-border {
+        right: 0;
+      }
+    }
+
+    .presale-sale-status {
+      padding: 12px;
+      background: #06ae72;
+      background-repeat: no-repeat;
+      border-radius: 8px;
+      overflow: hidden;
+      font-family: 'Poppins';
+      font-weight: 700;
+      font-size: 22px;
+      line-height: 30px;
+      text-align: center;
+
+      @media screen and (max-width: $breakpoint-md) {
+        padding: 4px 0;
+        font-size: 13px;
+        line-height: 24px;
+      }
+    }
+
+    .presale-pannel-inner {
+      padding: 0 22px;
+
+      @media screen and (max-width: $breakpoint-md) {
+        padding: 0;
+      }
+
+      .presale-cta {
+        padding: 20px 0 0;
+        display: flex;
+        justify-content: flex-start;
+
+        @media screen and (max-width: $breakpoint-md) {
+          justify-content: space-between;
+        }
+
+        &-button {
+          display: none;
+          padding: 16px 51px;
+          font-size: 20px;
+          font-weight: 500;
+          text-align: center;
+          color: #6c7781;
+          border: 3px solid rgba(75, 87, 99, 0.53);
+          border-radius: 18px;
+          cursor: pointer;
+
+          &:not(:last-child) {
+            margin-right: 20px;
+          }
+
+          &.default {
+            font-weight: 600;
+            color: #35924a;
+            background-color: rgba(53, 146, 74, 0.1);
+            border-color: #35924a;
+          }
+
+          @media screen and (max-width: $breakpoint-md) {
+            padding: 12px 10px;
+            width: calc(50% - 10px);
+            font-size: 14px;
+            border-width: 2px;
+            border-radius: 12px;
+          }
+        }
+      }
+
+      .presale-currency-select-row {
+        padding-bottom: 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        @media screen and (max-width: $breakpoint-md) {
+          padding-bottom: 10px;
+          flex-direction: column;
+          gap: 10px;
+        }
+
+        .presale-currency-select-title {
+          font-size: 20px;
+          font-weight: 500;
+
+          @media screen and (max-width: $breakpoint-md) {
+            font-size: 14px;
+          }
+        }
+
+        .presale-currency-select-list {
+          display: flex;
+          gap: 34px;
+
+          >* {
+            color: #a1a8bc;
+            font-weight: 500;
+            font-size: 16px;
+          }
+        }
+      }
+
+      .presale-discount-form-select {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .presale-usdc-balance {
+        padding: 10px 0;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        gap: 13px;
+        font-size: 18px;
+        color: #a1a8bc;
+
+        button {
+          font-size: 18px;
+          color: #a1a8bc;
+        }
+
+        @media screen and (max-width: $breakpoint-md) {
+          padding: 0;
+          justify-content: center;
+          gap: 10px;
+          max-width: 100%;
+          font-size: 14px;
+
+          img {
+            width: 16px;
+            height: 16px;
+          }
+        }
+      }
+
+      .presale-cta-row {
+        margin-top: 20px;
+        position: relative;
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        width: 100%;
+        color: #a1a8bc;
+        font-size: 16px;
+        font-weight: 600;
+
+        >* {
+          display: inline-flex;
+          align-items: center;
+          justify-content: flex-end;
+          flex: 1;
+
+          @media screen and (max-width: $breakpoint-md) {
+            width: 100%;
+            justify-content: center;
+          }
+        }
+
+        .presale-tnc {
+
+          span,
+          a {
+            font-size: 14px;
+            color: #c3cbde;
+          }
+
+          button {
+            font-size: 14px;
+            color: #6d90e2;
+          }
+        }
+
+        .connect-btn-wrapper {
+          max-width: 230px;
+
+          @media screen and (max-width: $breakpoint-md) {
+            padding-bottom: 20px;
+          }
+        }
+
+        @media screen and (max-width: $breakpoint-md) {
+          flex-direction: column-reverse;
+          align-items: center;
+        }
+      }
+
+      .presale-info-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 24px;
+        margin-top: 57px;
+
+        @media screen and (max-width: $breakpoint-md) {
+          margin-top: 32px;
+          grid-template-columns: 1fr;
+          gap: 16px;
+        }
+
+        .presale-info-board {
+          background: #0e1936;
+          border-radius: 16px;
+          padding: 20px 0;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          gap: 18px;
+
+          &:last-child {
+            grid-column-start: 1;
+            grid-column-end: 3;
+
+            @media screen and (max-width: $breakpoint-md) {
+              grid-column-end: 1;
+            }
+
+            &.presale-info-board-half-width {
+              grid-column-start: 2;
+              grid-column-end: 2;
+            }
+          }
+
+          .presale-info-title {
+            color: $green-400;
+            font-size: 21px;
+            font-weight: 500;
+            display: flex;
+            align-items: center;
+            gap: 13px;
+
+            @media screen and (max-width: $breakpoint-md) {
+              font-size: 18px;
+
+              img {
+                width: 19px;
+                height: 19px;
+              }
+            }
+          }
+
+          .presale-info-value {
+            display: flex;
+            align-items: center;
+            font-size: 22px;
+            font-weight: 500;
+
+            @media screen and (max-width: $breakpoint-md) {
+              font-size: 18px;
+            }
+          }
+
+          .presale-countdown {
+            gap: 8px;
+            text-align: center;
+
+            &>div {
+              min-width: 36px;
+            }
+
+            .presale-countdown-time-name {
+              font-size: 14px;
+              font-weight: 600;
+              color: #545e68;
+            }
+          }
+
+          .presale-tokens-sold {
+            text-align: center;
+
+            .presale-tokens-left {
+              font-size: 16px;
+              font-weight: 400;
+              color: rgba(255, 255, 255, 0.7);
+              margin-top: 8px;
+            }
+          }
+
+          .presale-info-currency {
+            gap: 10px;
+
+            img {
+              width: 33px;
+              height: 33px;
+            }
+          }
+        }
+      }
+
+      .user-guide {
+        padding-top: 47px;
+
+        p {
+          margin: 0;
+          padding: 0;
+          font-family: Poppins, sans-serif;
+          font-size: 16px;
+          font-weight: 400;
+          line-height: 24px;
+          color: #c3cbde;
+
+          &:not(:first-child) {
+            padding-top: 24px;
+          }
+
+          &.bold {
+            font-size: 18px;
+            font-weight: 600;
+            line-height: 27px;
+            color: #dde8f3;
+          }
+        }
+      }
+    }
+  }
+
+  .presale-instruction {
+    text-align: center;
+    font-family: Poppins, sans-serif;
+    font-size: 17px;
+    font-weight: 400;
+    color: #717880;
+    margin-top: 32px;
+
+    @media screen and (max-width: $breakpoint-md) {
+      font-size: 14px;
+    }
+
+    .presale-instruction-cta {
+      cursor: pointer;
+      display: inline-block;
+      color: #06ae72;
+    }
+  }
+
+  .presale-tooltip {
+    max-width: 360px;
+    margin: 0;
+  }
+}

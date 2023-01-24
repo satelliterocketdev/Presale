@@ -1,0 +1,258 @@
+@import '../../../styles/mixins';
+@import '../../../styles/variables';
+
+.txt1-bg {
+  position: absolute;
+  top: 39.166vw;
+  right: 0.4vw;
+  width: 18.77vw;
+  height: 11.5vw;
+  background-image: url('../../../assets/img/home-txt1.png');
+  background-repeat: no-repeat;
+  background-position: right center;
+  background-size: contain;
+  filter: blur(1px);
+  @media screen and (max-width: $breakpoint-md) {
+    top: 58vw;
+    right: -2px;
+    width: 50vw;
+    height: 24vw;
+  }
+}
+.txt2-bg {
+  position: absolute;
+  top: 26.944vw;
+  right: 0.25vw;
+  width: 38.152vw;
+  height: 11.5vw;
+  background-image: url('../../../assets/img/home-txt2.png');
+  background-repeat: no-repeat;
+  background-position: right center;
+  background-size: contain;
+  filter: blur(1px);
+  @media screen and (max-width: $breakpoint-md) {
+    top: 36vw;
+    left: 0.25vw;
+    width: 76vw;
+    height: 26vw;
+    background-position: left center;
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 40%, 0);
+    transform: translate3d(0, 40%, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.main-img1 {
+  position: absolute;
+  top: 14.416vw;
+  right: 22.577vw;
+  width: 22.8855vw;
+  height: 42.548vw;
+  background-image: url('../../../assets/img/banner1.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  z-index: 1000;
+
+  @media screen and (max-width: $breakpoint-md) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    top: 31vw;
+    left: 10vw;
+    width: 100%;
+    max-width: 74.666vw;
+    height: 86.666vw;
+    text-align: center;
+  }
+}
+
+.main-img2 {
+  position: absolute;
+  top: 15.527vw;
+  right: 8.66vw;
+  width: 19.096vw;
+  height: 37.8884vw;
+  background-image: url('../../../assets/img/banner2.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  z-index: 1000;
+
+  @media screen and (max-width: $breakpoint-md) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 23.6vw auto 0;
+    width: 40%;
+    max-width: 74.666vw;
+    height: 86.666vw;
+    text-align: center;
+  }
+}
+
+.main-img {
+  position: absolute;
+  top: 12vw;
+  right: 10vw;
+  width: 28vw;
+  height: 42.548vw;
+  background-image: url('../../../assets/img/homepage-banner-image.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  z-index: 1000;
+
+  @media screen and (max-width: $breakpoint-md) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    top: 38vw;
+    left: 0;
+    right: unset;
+    width: 100%;
+    height: 66vw;
+    background-position: center center;
+    transform: translateX(-50%);
+    text-align: center;
+  }
+}
+
+.banner-section {
+  padding-bottom: 7.222vw;
+  background-image: url('../../../assets/img/curve.png');
+  background-position: top 8.541vw center;
+  background-size: 100vw 42.43vw;
+  background-repeat: no-repeat;
+
+  @media screen and (max-width: $breakpoint-md) {
+    padding: 88vw 4.266vw 0;
+    background-image: url('../../../assets/img/curve_mobile.png');
+    background-position: center 52vw;
+    background-size: 100vw 48vw;
+  }
+
+  .banner-section-wrapper {
+    @include section;
+
+    width: 100vw;
+    max-width: 54vw;
+
+    @media screen and (max-width: $breakpoint-md) {
+      margin: 0 auto;
+      width: 100%;
+      max-width: 100%;
+    }
+
+    .gaming-dao {
+      padding-top: 5.819vw;
+      font-size: 5vw;
+      font-weight: 600;
+      line-height: 6.25vw;
+      color: #fff;
+
+      @media screen and (max-width: $breakpoint-md) {
+        padding-top: 0;
+        font-family: 'Montserrat Bold', sans-serif;
+        font-size: 12.266vw;
+        line-height: 14.933vw;
+        color: #fff;
+      }
+    }
+    .dao-community-txt {
+      padding-top: 1.111vw;
+      font-size: 1.6666vw;
+      font-weight: 500;
+      line-height: 2.7777vw;
+      max-width: 42.0138vw;
+      color: #a5a7b5;
+      opacity: 0.6;
+
+      @media screen and (max-width: $breakpoint-md) {
+        margin-top: 2.1333vw;
+        margin-bottom: 6.4vw;
+        padding-top: 0;
+        font-size: 4.8vw;
+        font-weight: 500;
+        line-height: 7.466vw;
+        color: #fff;
+        opacity: 0.6;
+      }
+    }
+    .btn-sale {
+      display: flex;
+      align-items: center;
+      margin-top: 2.777vw;
+      padding: 0 2.75vw;
+      border-radius: 1.1vw;
+      width: 100%;
+      max-width: 18vw;
+      height: 4.166vw;
+      font-size: 1.4vw;
+      font-weight: bold;
+      line-height: 2.7777vw;
+      background-color: #06ae72;
+      color: #fff;
+      cursor: pointer;
+      z-index: 5000;
+
+      background-image: url('../../../assets/img/sale-right.svg');
+      background-position: right 2.4vw center;
+      background-size: 0.6vw;
+      background-repeat: no-repeat;
+
+      @media screen and (max-width: $breakpoint-md) {
+        margin-top: 0;
+        padding: 0 5.3333vw 0 6.4vw;
+        border-radius: 2.6vw;
+        max-width: 55vw;
+        height: 14vw;
+        font-size: 4.8vw;
+        font-weight: bold;
+        line-height: 10.666vw;
+        background-size: 2vw;
+        background-position: right 5.3333vw center;
+      }
+    }
+    .grid3-btn {
+      margin-top: 3.6805vw;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-column-gap: 1.666vw;
+      grid-row-gap: 0.5555vw;
+      width: fit-content;
+      img {
+        width: 7.36vw;
+      }
+      a {
+        cursor: pointer;
+        z-index: 3000;
+      }
+
+      @media screen and (max-width: $breakpoint-md) {
+        margin-top: 6.4vw;
+        grid-column-gap: 5.333vw;
+        grid-row-gap: 5.333vw;
+        img {
+          width: 26.66vw;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: $breakpoint-md) {
+  .txt-bg {
+    display: none;
+  }
+}

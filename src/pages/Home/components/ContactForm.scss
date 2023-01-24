@@ -1,0 +1,108 @@
+@import '../../../styles/variables';
+@import '../../../styles/mixins';
+
+.contact-form-section {
+  position: relative;
+  margin: 0 auto 60px;
+  padding-top: 40px;
+  border-radius: 1.666vw;
+  width: 100%;
+  max-width: calc(100% - 16.666vw);
+  h2 {
+    padding-bottom: 20px;
+    font-size: 3.3333vw;
+    font-weight: 600;
+    line-height: 4.1666vw;
+    color: #fff;
+    @media screen and (max-width: 768px) {
+      font-size: 9.0666vw;
+      line-height: 12.266vw;
+    }
+  }
+  .grid-part {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    @media screen and (max-width: 768px) {
+      grid-template-columns: 1fr;
+      gap: 6px;
+    }
+    .left-part {
+      p {
+        font-size: 1.3888vw;
+        line-height: 2.083vw;
+        color: #A5A7B5;    
+        @media screen and (max-width: 768px) {
+          font-size: 4.8vw;
+          line-height: 7.4666vw;
+        }
+      }
+    }
+    .right-part {
+      display: block;
+      .name-email {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 24px;
+      }
+      label {
+        display: block;
+        width: 100%;
+        font-size: 1.25vw;
+        line-height: 40px;
+        @media screen and (max-width: 768px) {
+          font-size: 4vw;
+          font-weight: 500;
+          line-height: 10.666vw;
+        }
+        span {
+          color: #A1A8BC;
+        }
+      }
+    }
+    input,
+    textarea {
+      padding: 10px 20px;
+      width: 100%;
+      font-size: 1.25vw;
+      appearance: none;
+      border: 1px solid #fff4;
+      border-radius: 8px;
+      color: #fff;
+      background-color: #212e54;
+      @media screen and (max-width: 768px) {
+        font-size: 4vw;
+        font-weight: 500;
+      }
+    }
+    input {
+      height: 48px;
+      @media screen and (max-width: 768px) {
+        height: 64px;
+      }
+    }
+    textarea {
+      height: 202px;
+    }
+    button.send-button {
+      margin-top: 20px;
+      padding: 0 2.75vw;
+      border-radius: 12px;
+      width: 100%;
+      height: 4.166vw;
+      font-size: 1.4vw;
+      font-weight: bold;
+      line-height: 2.7777vw;
+      background-color: #35924A;
+      color: #fff;
+      @media screen and (max-width: 768px) {
+        padding: 0 5.3333vw 0 6.4vw;
+        border-radius: 2.6vw;
+        height: 14vw;
+        font-size: 4.8vw;
+        font-weight: bold;
+        line-height: 10.666vw;
+      }
+    }
+  }
+}

@@ -1,0 +1,119 @@
+@import '../styles/variables';
+
+.presale-header {
+  position: relative;
+  height: 406px;
+  background-image: url('../assets/img/header-bg-desktop.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  overflow: hidden;
+  @media screen and (max-width: $breakpoint-md) {
+    height: 372px;
+    background-image: url('../assets/img/header-bg-mobile.jpg');
+  }
+
+  .presale-header-bg {
+    position: absolute;
+    left: 50%;
+    top: 60%;
+    transform: translate(-50%, -50%);
+    width: 140px;
+
+    @media screen and (max-width: $breakpoint-md) {
+      top: 70%;
+      width: 100px;
+    }
+
+    @media screen and (max-width: 372px) {
+      height: 100%;
+    }
+  }
+
+  .presale-header-container {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: $breakpoint-xl;
+    width: 100%;
+    padding: 30px 20px;
+
+    @media screen and (max-width: $breakpoint-md) {
+      padding: 20px 20px;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    .presale-logo {
+      width: 174px;
+      height: 24px;
+    }
+
+    .presale-title {
+      @media screen and (max-width: $breakpoint-md) {
+        visibility: hidden;
+      }
+    }
+
+    .btn-connect {
+      display: flex;
+      border-radius: 73.206vw;
+      align-items: center;
+      justify-content: center;
+      width: 11.713vw;
+      height: 3.3674vw;
+      font-size: 1.2445vw;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: bold;
+      color: #000;
+      cursor: pointer;
+    }
+
+    .btn-bg-yellow {
+      background: #ffee1c 0 0 no-repeat padding-box;
+    }
+
+    .btn-bg-white {
+      background: #fff 0 0 no-repeat padding-box;
+    }
+
+    .presale-wallet-btn {
+      width: 100%;
+      max-width: 210px;
+      border: 2px solid $green-400;
+      background: #{$green-400}32;
+      border-radius: 15px;
+      padding: 16px 32px;
+      color: $green-400;
+      font-family: 'Poppins';
+      font-weight: 600;
+      display: inline-flex;
+      gap: 12px;
+      align-items: center;
+      @media screen and (max-width: $breakpoint-md) {
+        padding: 10px 32px;
+      }
+    }
+
+    .wallet-info-button {
+      position: absolute;
+      right: 20px;
+      top: 100px;
+      padding: 16px 32px;
+      width: 100%;
+      max-width: 210px;
+      font-size: 14px;
+      color: #fff;
+      background-color: #e43623;
+      border-radius: 15px;
+      @media screen and (max-width: $breakpoint-md) {
+        position: static;
+        padding: 10px 32px;
+      }
+    }
+  }
+}

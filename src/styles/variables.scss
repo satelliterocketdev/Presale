@@ -1,0 +1,25 @@
+$breakpoint-xs: 480px;
+$breakpoint-sm: 600px;
+$breakpoint-md: 768px;
+$breakpoint-lg: 992px;
+$breakpoint-xl: 1200px;
+$breakpoint-2xl: 1440px;
+
+$header-height: (
+  'default': 9.0277vw,
+  'md': 32vw,
+);
+
+// Colors
+$green-400: #35924a;
+$green-500: #49bd64;
+$green-600: #36934B;
+$red-400: #e43623;
+$white: #ffffff;
+$black-perl: #080f2e;
+$iron: #e1e2e2;
+$yellow: #f2a936;
+
+// Fonts
+$font-primary: 'Poppins';
+$font-secondary: 'Montserrat';

@@ -1,0 +1,28 @@
+.socials {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  .icon {
+    margin-left: 1.111vw;
+    width: 1.666vw;
+    cursor: pointer;
+    z-index: 3000;
+  }
+  a {
+    z-index: 3000;
+  }
+  .link-p {
+    margin-top: 0.2472vw;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .socials {
+    .icon {
+      margin-left: 4.2666vw;
+      width: 5.333vw;
+      min-width: 20px;
+      max-width: 24px;
+    }
+  }
+}

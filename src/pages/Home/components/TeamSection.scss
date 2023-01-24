@@ -1,0 +1,119 @@
+@import '../../../styles/variables';
+@import '../../../styles/mixins';
+
+.team-section {
+  margin: 0 auto 60px;
+  width: 100%;
+  max-width: calc(100% - 16.666vw);
+  h2 {
+    font-size: 3.3333vw;
+    line-height: 4.1666vw;
+    font-weight: 600;
+    text-align: center;
+    color: #fff;
+    @media screen and (max-width: 768px) {
+      font-size: 9.066vw;
+      line-height: 12.266vw;
+    }
+  }
+  p {
+    margin: 0 auto;
+    padding-top: 43px;
+    max-width: 39vw;
+    text-align: center;
+    font-size: 1.3888vw;
+    line-height: 2.083vw;
+    color: #A5A7B5;
+    @media screen and (max-width: 768px) {
+      padding-top: 4.266vw;
+      max-width: 100%;
+      font-size: 4.8vw;
+      line-height: 7.4666vw;
+    }
+  }
+  .grid-part {
+    margin: 0 auto;
+    padding-top: 10px;
+    max-width: 1200px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 25px;
+
+    @media screen and (max-width: $breakpoint-xl) {
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    @media screen and (max-width: $breakpoint-lg) {
+      grid-template-columns: 1fr 1fr;
+    }
+
+    @media screen and (max-width: $breakpoint-md) {
+      margin-top: 17.6vw;
+      grid-template-columns: 1fr 1fr;
+    }
+
+    @media screen and (max-width: $breakpoint-sm) {
+      grid-template-columns: 1fr;
+    }
+
+    .item {
+      padding-top: 40px;
+      .pic {
+        padding-top: 75%;
+        background-position: center 25%;
+        background-size: cover;
+        border: 2px solid transparent;
+        border-radius: 16px;
+        &:hover {
+          border-color: #14D03F;
+        }
+      }
+
+      .name {
+        padding-top: 43px;
+        max-width: 39vw;
+        text-align: center;
+        font-size: 1.3888vw;
+        line-height: 2.083vw;
+        font-weight: 600;
+        color: #fff;
+        @media screen and (max-width: 768px) {
+          padding-top: 4.266vw;
+          max-width: 100%;
+          font-size: 4.8vw;
+          line-height: 7.4666vw;
+        }
+      }
+
+      .title {
+        padding-top: 8px;
+        max-width: 39vw;
+        text-align: center;
+        font-size: 1.3888vw;
+        line-height: 2.083vw;
+        color: #fff;
+        @media screen and (max-width: 768px) {
+          padding-top: 4.266vw;
+          max-width: 100%;
+          font-size: 4.8vw;
+          line-height: 7.4666vw;
+        }
+      }
+
+      .bio {
+        padding-top: 20px;
+        max-width: 39vw;
+        text-align: center;
+        font-size: 1.3888vw;
+        line-height: 2.083vw;
+        color: #fff;
+        @media screen and (max-width: 768px) {
+          padding-top: 4.266vw;
+          max-width: 100%;
+          font-size: 4.8vw;
+          line-height: 7.4666vw;
+        }
+      }
+    }
+  }
+}

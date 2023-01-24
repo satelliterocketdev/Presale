@@ -1,0 +1,15 @@
+.presale-page {
+  background: #02091b;
+  overflow-x: hidden;
+
+  .presale-page-wrapper {
+    position: relative;
+    width: 100vw;
+    background-repeat: no-repeat;
+    background-image: url('../../assets/img/presale-ellipse-1.png'),
+      url('../../assets/img/presale-ellipse-2.png'),
+      url('../../assets/img/presale-ellipse-3.png');
+    background-size: 700px, 1200px, 400px;
+    background-position: 0 100%, 50% 80px, 100% 100%;
+  }
+}

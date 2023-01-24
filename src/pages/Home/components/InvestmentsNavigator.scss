@@ -1,0 +1,30 @@
+@import '../../../styles/variables';
+
+.investments-navigator {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+
+  @media screen and (max-width: $breakpoint-md) {
+    top: 24vw;
+  }
+
+  .arrow-size {
+    margin-left: 1.666vw;
+    width: 4.1666vw;
+    height: 4.1666vw;
+
+    @media screen and (max-width: $breakpoint-md) {
+      margin-left: 2.133vw;
+      width: 10.666vw;
+      height: 10.666vw;
+    }
+  }
+
+  .arrow-size:hover {
+    transform: scale(1.03);
+  }
+}

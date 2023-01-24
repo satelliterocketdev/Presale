@@ -1,0 +1,30 @@
+@import '../../styles/variables';
+
+/** Body styles **/
+.home-page {
+  position: relative;
+  // padding-top: map-get($header-height, 'default');
+  background-repeat: no-repeat;
+  background-image: url('../../assets/img/ellipse-left.png'),
+    url('../../assets/img/ellipse-middle.png'),
+    url('../../assets/img/ellipse.png'),
+    url('../../assets/img/ellipse-line.png'),
+    url('../../assets/img/ellipse-bottom.png');
+  background-size: 70vw 72.5vw, 160vw, 24.64vw 23.12vw, 40vw 100vw, 100vw 50vw;
+  background-position: 0 0, -10vw -20vw, 100% 0, 0 240vw, -10vw 100%;
+
+  @media screen and (max-width: $breakpoint-md) {
+    // padding-top: map-get($header-height, 'md');
+    background-image: url('../../assets/img/ellipse-left.png'),
+      url('../../assets/img/ellipse-middle.png'),
+      url('../../assets/img/ellipse.png'),
+      url('../../assets/img/ellipse-line.png'),
+      url('../../assets/img/ellipse-line2.png'),
+      url('../../assets/img/ellipse-line3.png'),
+      url('../../assets/img/ellipse-bottom.png');
+    background-size: 70vw 172.5vw, 195.25vw 193.75vw, 24.64vw 23.12vw,
+      75vw 160vw, 100vw 160vw, 100vw 160vw, 400vw;
+    background-position: 0 0, -16vw 10vw, 100% 0, 0 1040vw, -40vw 780vw,
+      -40vw 780vw, -20vw 1110vw;
+  }
+}

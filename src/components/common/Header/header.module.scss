@@ -1,0 +1,71 @@
+@import '../../../styles/variables.scss';
+@import '../../../styles//mixins.scss';
+
+.desktop {
+  // padding: 0 30px;
+  padding-top: 52px;
+  display: none;
+  @include section;
+  @media screen and (min-width: $breakpoint-md) {
+    display: flex;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  @media screen and (min-width: $breakpoint-lg) {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+/******************* MOBILE NAV ************************/
+
+.mobile {
+  display: none;
+  @media screen and (max-width: 767px) {
+    display: block;
+  }
+  .navContainer {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: $black-perl;
+    z-index: 10001;
+  }
+  .logo {
+    width: 175px;
+    height: 35px;
+  }
+}
+.mobileNavWrapper {
+  position: relative;
+  z-index: 10002;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 70px;
+  flex-grow: 1;
+  padding: 0 15px;
+}
+
+.logo {
+  width: 126px;
+  height: 25px;
+  cursor: pointer;
+  // margin-left: auto;
+  // margin-right: auto;
+  // @media screen and (max-width: $breakpoint-md) {
+  //   margin-left: unset;
+  //   margin-right: auto;
+  // }
+}
+
+@media screen and (min-width: $breakpoint-lg) {
+  .desktop {
+    padding-right: 100px;
+  }
+  // .logo {
+  //   margin-right: unset;
+  //   margin-left: 120px;
+  // }
+}

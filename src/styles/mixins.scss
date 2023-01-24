@@ -1,0 +1,9 @@
+@import './variables';
+
+@mixin section {
+  margin-left: 8.333vw;
+
+  @media screen and (max-width: $breakpoint-md) {
+    margin-left: 0;
+  }
+}

@@ -1,0 +1,153 @@
+@import '../../styles/variables';
+
+.presale-login-page {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-width: 100vw;
+  min-height: 100vh;
+  background-color: #050d22;
+  background-image: url('../../assets/img/login-ellipse.svg');
+  background-repeat: no-repeat;
+  background-position: 60% 0;
+  background-size: 80%;
+  @media screen and (max-width: $breakpoint-md) {
+    background-image: url('../../assets/img/login-ellipse.svg'),
+      url('../../assets/img/login-ellipse-mobile.svg');
+    background-position: 0 0, 100% 100%;
+    background-size: 100%, 100%;
+  }
+
+  .presale-login-header-wrapper {
+    padding: 40px;
+    img {
+      width: 100%;
+      max-width: 180px;
+    }
+  }
+
+  .presale-login-panel {
+    padding: 0 16px;
+    font-family: 'Poppins';
+    position: relative;
+    background: #2a3653;
+    border-radius: 25px;
+    padding: 36px;
+    max-width: 630px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @media screen and (max-width: $breakpoint-md) {
+      padding: 20px;
+    }
+
+    .presale-login-border-top {
+      position: absolute;
+      top: 0;
+      left: 0;
+      transform: translateY(-50%);
+      width: 100%;
+    }
+
+    .presale-login-border-bottom {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      transform: translateY(50%);
+      width: 100%;
+    }
+
+    .presale-login-border-left {
+      position: absolute;
+      left: 0;
+      top: 0;
+      transform: translateX(-50%);
+      height: 100%;
+    }
+
+    .presale-login-border-right {
+      position: absolute;
+      right: 0;
+      top: 0;
+      transform: translateX(50%);
+      height: 100%;
+    }
+
+    .presale-login-logo {
+      max-width: 123px;
+      display: flex;
+
+      img {
+        width: 100%;
+      }
+    }
+
+    .presale-login-separator {
+      width: 100%;
+      display: flex;
+      margin-top: 20px;
+      margin-bottom: 16px;
+
+      img {
+        width: 100%;
+      }
+    }
+
+    .presale-login-inner {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      padding: 0 50px;
+      align-items: stretch;
+      text-align: center;
+
+      @media screen and (max-width: $breakpoint-md) {
+        padding: 0;
+      }
+
+      .presale-login-title {
+        font-size: 24px;
+        font-weight: 500;
+        margin: 0;
+        margin-bottom: 19px;
+      }
+
+      .presale-login-pwd {
+        background: #222d47;
+        border: 1px solid #384462;
+        outline: none;
+        font-size: 16px;
+        font-weight: 400;
+        padding: 27px 34px;
+        border-radius: 16px;
+        margin-bottom: 24px;
+        color: #fff;
+
+        @media screen and (max-width: $breakpoint-md) {
+          font-size: 14px;
+          padding: 24px;
+          margin-bottom: 16px;
+        }
+
+        &::placeholder {
+          color: #626e8a;
+        }
+      }
+
+      .presale-login-btn {
+        background: rgba(53, 146, 74, 0.1);
+        border: 3px solid #35924a;
+        padding: 24px 0;
+        border-radius: 18px;
+        font-family: 'Montserrat';
+        font-weight: 600;
+        font-size: 20px;
+        color: #fff;
+      }
+    }
+  }
+}

@@ -1,0 +1,88 @@
+@import '../../../styles/variables';
+@import '../../../styles/mixins';
+
+.mobile-map {
+  display: none;
+
+  @media screen and (max-width: $breakpoint-md) {
+    display: block;
+    margin-top: 17.866vw;
+    margin-left: 4.266vw;
+    width: calc(100% - 4.266vw);
+    height: 82.666vw;
+  }
+
+  & > img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+.overall-section {
+  position: relative;
+  margin-top: -6vw;
+  padding: 16vw 0 36vw;
+  width: 100%;
+  background-image: url('../../../assets/img/map.png');
+  background-position: right top;
+  background-size: 69.513vw 105vw;
+  background-repeat: no-repeat;
+
+  @media screen and (max-width: $breakpoint-md) {
+    margin: -12vw 4.266vw;
+    padding-bottom: 0;
+    max-width: calc(100% - 2 * 4.266vw);
+    background-image: unset;
+  }
+
+  .overall-section-wrapper {
+    position: relative;
+    @include section;
+
+    .blur30 {
+      position: absolute;
+      top: -100px;
+      right: 0;
+      width: 512px;
+      height: 252px;
+      background: linear-gradient(
+        180deg,
+        rgba(23, 34, 62, 0.24) 0%,
+        rgba(9, 18, 38, 0.4) 100%
+      );
+      filter: blur(2.083vw);
+    }
+    .together-txt {
+      width: 100%;
+      max-width: 48.263vw;
+      font-size: 3.333vw;
+      font-weight: 600;
+      line-height: 4.1666vw;
+      color: #fff;
+
+      @media screen and (max-width: $breakpoint-md) {
+        max-width: 100%;
+        font-size: 9.0666vw;
+        line-height: 12.266vw;
+        color: #fff;
+      }
+    }
+    .crypto-txt {
+      padding-top: 1.666vw;
+      width: 100%;
+      max-width: 42.0138vw;
+      font-size: 1.3888vw;
+      line-height: 2.083vw;
+      font-weight: 500;
+      color: #a5a7b5;
+      opacity: 0.6;
+
+      @media screen and (max-width: $breakpoint-md) {
+        padding-top: 4.266vw;
+        max-width: 100%;
+        font-size: 4.8vw;
+        line-height: 7.4666vw;
+      }
+    }
+  }
+}

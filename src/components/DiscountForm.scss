@@ -1,0 +1,46 @@
+@import '../styles/variables';
+
+.presale-discount-form {
+    border-radius: 16px;
+    color: #eee;
+    padding: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.26);
+    margin-top: 10px;
+    aspect-ratio: 1 / 1;
+    background: #1f2e54;
+    cursor: pointer;
+   
+
+    &-title {
+        font-size: 18px;
+        font-weight: 600;
+        color: #F80;
+        margin: 5px;
+    }
+
+    &-cliff {
+        font-size: 12px;
+        font-weight: 400;
+        margin: 5px;
+    }
+
+    &-vesting {
+        font-size: 10px;
+        font-weight: 300;
+        margin: 8px 5px 3px 5px;
+        color: #9aa5af;
+    }
+
+    &-yearly {
+        font-size: 9px;
+        font-weight: 300;
+        margin-left: 5px;
+        color: #9aa5af;
+    }
+}
+
+.selected {
+    border: 3px solid $green-400;
+    background: #5bc1881c;
+
+}

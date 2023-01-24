@@ -1,0 +1,93 @@
+@import '../../../styles/variables';
+
+.container {
+  padding-bottom: 20px;
+  padding-right: 70px;
+  display: flex;
+  width: 100%;
+  justify-content: right;
+}
+.button {
+  width: 100%;
+  max-width: 200px;
+  border: 2px solid $green-400;
+  background: #{$green-400}32;
+  border-radius: 15px;
+  padding: 16px 32px;
+  color: $green-400;
+  font-family: 'Poppins';
+  font-weight: 600;
+  display: inline-flex;
+  gap: 12px;
+  align-items: center;
+  justify-content: center;
+  @media screen and (max-width: $breakpoint-md) {
+    padding: 10px 32px;
+  }
+}
+.text {
+  color: $black-perl;
+  text-align: left;
+}
+
+.textTitle {
+  padding: 5px 30px;
+  font-family: $font-primary;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  text-align: center;
+}
+
+.textDescription {
+  padding: 10px 42px;
+  font-family: $font-primary;
+  font-style: normal;
+  font-size: 12px;
+}
+
+.textComment {
+  padding: 0px 30px;
+  font-family: $font-primary;
+  font-style: italic;
+  font-size: 12px;
+  color: gray;
+}
+
+// joy token prohibition popup
+.prohibitionPopUp {
+  position: relative;
+  text-align: center;
+  background: $white;
+  border-radius: 16px;
+  padding: 50px 0 30px 0;
+}
+.tokenNotFoundText {
+  max-width: 330px;
+  margin: 30px auto;
+  font-family: $font-primary;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 26px;
+  line-height: 39px;
+  text-align: center;
+  color: $black-perl;
+}
+.tokenMessage {
+  max-width: 330px;
+  margin: 17px auto;
+  font-family: $font-primary;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  text-align: center;
+  color: $black-perl;
+}
+
+.closeIcon {
+  position: absolute;
+  right: -18px;
+  top: -15px;
+  cursor: pointer;
+}

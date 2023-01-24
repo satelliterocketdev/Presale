@@ -1,0 +1,124 @@
+/** Footer styles **/
+.home-footer {
+  display: flex;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 100%;
+  height: 10.069vw;
+
+  .inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 8.333vw;
+    width: 100%;
+    .logo {
+      width: 14.861vw;
+      cursor: pointer;
+    }
+    .desc-txt,
+    .terms-txt {
+      width: 100%;
+      font-size: 0.8333vw;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 300;
+      line-height: 18px;
+      a, button {
+        white-space: nowrap;
+        color: #fffd;
+      }
+      @media screen and (max-width: 768px) {
+        button {
+          margin: 0 !important;
+          padding: 0;
+          width: auto;
+        }
+      }
+    }
+    .desc-txt {
+      padding-top: 1.3888vw;
+      max-width: 19.583vw;
+    }
+    div.terms-txt {
+      padding-top: 1.3888vw;
+      padding-left: 1.458vw;
+      @media screen and (max-width: 768px) {
+        padding-top: 20px;
+        padding-bottom: 60px;
+        justify-content: center;
+      }
+    }
+  }
+
+  .modal-overlay {
+    position: fixed;
+    padding: 20px;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+    .modal-content {
+      padding: 20px 4px;
+      position: relative;
+      width: 100%;
+      height: 80vh;
+      max-width: 860px;
+      color: #000;
+      background-color: #fff;
+      border-radius: 8px;
+      overflow: auto;
+      animation: zoom-in .25s ease-out;
+      button {
+        position: absolute;
+        right: 16px;
+        top: 0;
+        font-size: 48px;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .home-footer {
+    height: auto;
+    text-align: center;
+    .inner {
+      display: block;
+      padding: 0 4.2666vw;
+      .logo {
+        margin-bottom: 3.3013vw;
+        width: 43.2vw;
+      }
+      .desc-txt {
+        padding-top: 0;
+        font-size: 3.2vw;
+        line-height: 4.8vw;
+        max-width: unset;
+      }
+      .socials {
+        margin-top: 10.666vw;
+        justify-content: center;
+        .icon {
+          margin-left: 0;
+          &:not(:last-child) {
+            margin-right: 4.2666vw;
+          }
+        }
+      }
+      .terms-txt {
+        margin-top: 0;
+        padding: 6.4vw 0 6.933vw;
+        font-size: 3.2vw;
+        line-height: 4.8vw;
+        & > .terms-txt:not(:last-child) {
+          margin-right: 4vw;
+        }
+      }
+    }
+  }
+}

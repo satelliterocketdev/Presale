@@ -1,0 +1,301 @@
+@import '../../../styles/variables';
+
+.presaleV2-panel {
+  padding: 30px 16px 100px;
+  max-width: 677px;
+  width: 100%;
+  margin: 0 auto;
+
+  @media screen and (max-width: $breakpoint-md) {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  .presaleV2-heading-img {
+    width: 100%;
+    margin-bottom: 50px;
+
+    @media screen and (max-width: $breakpoint-md) {
+      margin-bottom: 24px;
+    }
+  }
+
+  .presaleV2-panel-wrapper {
+    position: relative;
+    padding: 9px 13px 28px;
+    background: #152348;
+
+    @media screen and (max-width: $breakpoint-md) {
+      padding: 23px;
+    }
+
+    .presaleV2-horizontal-border {
+      width: 100%;
+      height: 3px;
+      position: absolute;
+
+      &.presaleV2-top-border {
+        top: 0;
+      }
+
+      &.presaleV2-bottom-border {
+        bottom: 0;
+        height: 15px;
+        transform: translateY(50%);
+      }
+    }
+
+    .presaleV2-vertical-border {
+      height: 100%;
+      width: 3px;
+      position: absolute;
+
+      &.presaleV2-left-border {
+        left: 0;
+      }
+
+      &.presaleV2-right-border {
+        right: 0;
+      }
+    }
+
+    .presaleV2-sale-status {
+      background: url('../../../assets/img/bg-presale-period.png');
+      background-repeat: no-repeat;
+      border-radius: 8px;
+      overflow: hidden;
+      padding: 3px 0;
+      font-family: 'Poppins';
+      font-weight: 700;
+      font-size: 16px;
+      text-align: center;
+
+      @media screen and (max-width: $breakpoint-md) {
+        font-size: 14px;
+        font-weight: 600;
+      }
+    }
+
+    .presaleV2-pannel-inner {
+      padding: 0 22px;
+
+      @media screen and (max-width: $breakpoint-md) {
+        padding: 0;
+      }
+
+      .presaleV2-ido {
+        margin: 10px 0 40px;
+        font-size: 30px;
+        font-family: 'Poppins';
+        font-weight: 500;
+
+        @media screen and (max-width: $breakpoint-md) {
+          font-size: 20px;
+        }
+      }
+
+      .presaleV2-currency-select-row {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 22px;
+
+        @media screen and (max-width: $breakpoint-md) {
+          flex-direction: column;
+          gap: 10px;
+        }
+
+        .presaleV2-currency-select-title {
+          font-size: 20px;
+          font-weight: 500;
+
+          @media screen and (max-width: $breakpoint-md) {
+            font-size: 14px;
+          }
+        }
+
+        .presaleV2-currency-select-list {
+          display: flex;
+          gap: 34px;
+
+          > * {
+            color: #a1a8bc;
+            font-weight: 500;
+            font-size: 16px;
+          }
+        }
+      }
+
+      .presaleV2-cta-row {
+        display: flex;
+        width: 100%;
+        margin-top: 12px;
+        color: #a1a8bc;
+        font-size: 16px;
+        font-weight: 600;
+
+        @media screen and (max-width: $breakpoint-md) {
+          gap: 16px;
+        }
+
+        > * {
+          display: inline-flex;
+          align-items: center;
+          justify-content: flex-end;
+          flex: 1;
+
+          @media screen and (max-width: $breakpoint-md) {
+            width: 100%;
+            justify-content: center;
+          }
+        }
+
+        .presaleV2-usdc-balance {
+          display: flex;
+          align-items: center;
+          justify-content: flex-end;
+          max-width: 50%;
+          gap: 13px;
+          font-size: 14px;
+
+          @media screen and (max-width: $breakpoint-md) {
+            justify-content: center;
+            gap: 10px;
+            max-width: 100%;
+
+            img {
+              width: 16px;
+              height: 16px;
+            }
+          }
+        }
+
+        @media screen and (max-width: $breakpoint-md) {
+          flex-direction: column-reverse;
+          align-items: center;
+        }
+      }
+
+      .presaleV2-info-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 24px;
+        margin-top: 57px;
+
+        @media screen and (max-width: $breakpoint-md) {
+          grid-template-columns: 1fr;
+          gap: 16px;
+        }
+
+        .presaleV2-info-board {
+          background: #0e1936;
+          border-radius: 16px;
+          padding: 20px 0;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          gap: 18px;
+
+          &:last-child {
+            grid-column-start: 1;
+            grid-column-end: 3;
+
+            @media screen and (max-width: $breakpoint-md) {
+              grid-column-end: 1;
+            }
+
+            &.presaleV2-info-board-half-width {
+              grid-column-start: 2;
+              grid-column-end: 2;
+            }
+          }
+
+          .presaleV2-info-title {
+            color: $green-400;
+            font-size: 21px;
+            font-weight: 500;
+            display: flex;
+            align-items: center;
+            gap: 13px;
+
+            @media screen and (max-width: $breakpoint-md) {
+              font-size: 18px;
+
+              img {
+                width: 19px;
+                height: 19px;
+              }
+            }
+          }
+
+          .presaleV2-info-value {
+            display: flex;
+            align-items: center;
+            font-size: 22px;
+            font-weight: 500;
+
+            @media screen and (max-width: $breakpoint-md) {
+              font-size: 18px;
+            }
+          }
+
+          .presaleV2-countdown {
+            gap: 8px;
+            text-align: center;
+
+            & > div {
+              min-width: 36px;
+            }
+
+            .presaleV2-countdown-time-name {
+              font-size: 14px;
+              font-weight: 600;
+              color: #545e68;
+            }
+          }
+
+          .presaleV2-tokens-sold {
+            text-align: center;
+
+            .presaleV2-tokens-left {
+              font-size: 16px;
+              font-weight: 400;
+              color: rgba(255, 255, 255, 0.7);
+              margin-top: 8px;
+            }
+          }
+          .presaleV2-info-currency {
+            gap: 10px;
+
+            img {
+              width: 33px;
+              height: 33px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .presaleV2-instruction {
+    text-align: center;
+    font-family: 'Poppins';
+    font-size: 17px;
+    font-weight: 400;
+    color: #717880;
+    margin-top: 32px;
+
+    @media screen and (max-width: $breakpoint-md) {
+      font-size: 14px;
+    }
+
+    .presaleV2-instruction-cta {
+      color: $green-400;
+    }
+  }
+
+  .presaleV2-tooltip {
+    max-width: 360px;
+    margin: 0;
+  }
+}

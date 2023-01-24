@@ -1,0 +1,24 @@
+@import './styles/variables';
+
+.react-multi-carousel-list {
+  margin-left: -0.8333vw;
+  width: calc(100% + 1.666vw) !important;
+}
+@media screen and (max-width: $breakpoint-md) {
+  .react-multi-carousel-list {
+    margin-left: -2.133vw !important;
+    width: calc(100% + 2 * 2.133vw) !important;
+  }
+}
+.cursor-p {
+  cursor: pointer;
+  z-index: 1000;
+}
+
+.justify-end {
+  justify-content: end;
+}
+
+.justify-center {
+  justify-content: center;
+}

@@ -1,0 +1,56 @@
+@import '../../../styles/variables';
+
+.grid3-txt {
+  margin-top: 6.805vw;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-column-gap: 3.4722vw;
+  width: fit-content;
+
+  @media screen and (max-width: $breakpoint-md) {
+    grid-template-columns: 1fr;
+    grid-column-gap: 4.266vw;
+    grid-row-gap: 6.4vw;
+    width: 100%;
+  }
+
+  .number-txt {
+    padding-bottom: 1.666vw;
+    font-size: 3.3333vw;
+    font-weight: 500;
+    line-height: 4.1666vw;
+    color: #fff;
+
+    @media screen and (max-width: $breakpoint-md) {
+      padding-bottom: 2.133vw;
+      font-size: 9.0666vw;
+      line-height: 12.266vw;
+      text-align: center;
+    }
+  }
+  .number-desc {
+    width: 100%;
+    max-width: 13.75vw;
+    font-size: 1.666vw;
+    line-height: 2.7777vw;
+    color: #fff;
+    opacity: 0.6;
+    text-transform: capitalize;
+
+    @media screen and (max-width: $breakpoint-md) {
+      max-width: unset;
+      font-size: 4.8vw;
+      font-weight: 500;
+      line-height: 7.4666vw;
+      text-align: center;
+    }
+  }
+  .number-desc-mw {
+    max-width: 16.666vw;
+
+    @media screen and (max-width: $breakpoint-md) {
+      max-width: unset;
+      text-align: center;
+    }
+  }
+}

@@ -1,0 +1,26 @@
+@import '../../../styles/variables.scss';
+
+.footerWrapper {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 30px;
+  margin: 0 auto;
+  gap: 30px;
+}
+.logo {
+  width: 126px;
+  height: 25px;
+  cursor: pointer;
+}
+
+
+@media screen and (min-width: $breakpoint-lg) {
+  .footerWrapper {
+    margin: unset;
+    padding-right: 120px;
+  }
+
+  .logo {
+    margin-left: 120px;
+  }
+}

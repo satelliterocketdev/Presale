@@ -1,0 +1,118 @@
+@import '../../../styles/variables';
+@import '../../../styles/mixins';
+
+.roadmap-card-section {
+  position: relative;
+  margin: 10vw auto;
+  border-radius: 1.666vw;
+  width: 100%;
+  max-width: calc(100% - 16.666vw);
+  overflow: hidden;
+
+  .grid2 {
+    padding: 110px 99px;
+    display: grid;
+    grid-template-columns: 1fr 1.4fr;
+    column-gap: 5vw;
+    align-items: center;
+    background: linear-gradient(180deg, #02091b 0%, #0d2257 100%);
+    .icon-part {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .roadmap-icon {
+        width: 100%;
+        height: 16vw;
+        max-height: 35.2777vw;
+      }
+    }
+    .text-part {
+      .large-discord {
+        margin-top: 2.9166vw;
+        margin-bottom: 2.083vw;
+        width: 4.1666vw;
+      }
+      .join-txt {
+        width: 100%;
+        max-width: 31.25vw;
+        font-size: 3.3333vw;
+        font-weight: 600;
+        line-height: 4.1666vw;
+        color: #fff;
+      }
+      .join-right {
+        display: flex;
+        justify-content: left;
+        align-items: center;
+        margin-top: 2.7777vw;
+        font-size: 1.25vw;
+        font-weight: 600;
+        line-height: 2.7777vw;
+        color: #06ae72;
+        cursor: pointer;
+      }
+      .right-icon-size {
+        margin-left: 1.25vw;
+        width: 1.3888vw;
+      }
+    }
+  }
+  .footer-ellipse {
+    position: absolute;
+    right: -8.3333vw;
+    bottom: -22.222vw;
+    .ellipse-size {
+      width: 34.722vw;
+      height: 48.611vw;
+    }
+  }
+
+  @media screen and (max-width: $breakpoint-md) {
+    margin: 0 4.2666vw 16vw;
+    border-radius: 6.4vw;
+    max-width: fit-content;
+    .grid2 {
+      grid-template-columns: 1fr;
+      padding: 0 4vw;
+      .icon-part {
+        padding: 10vw 0 6vw;
+        .roadmap-icon {
+          height: 24vw;
+        }
+      }
+      .text-part {
+        padding-left: 0;
+        text-align: center;
+        .large-discord {
+          margin-top: 12vw;
+          margin-bottom: 9.8666vw;
+          width: 10.666vw;
+          height: 8.1573vw;
+        }
+        .join-txt {
+          max-width: 100%;
+          font-size: 9.0666vw;
+          line-height: 12.266vw;
+          text-align: center;
+        }
+        .join-right {
+          margin: 4vw 0 6vw;
+          display: flex;
+          justify-content: center;
+          font-size: 4vw;
+          font-weight: 500;
+          line-height: 10.666vw;
+        }
+        .right-icon-size {
+          margin-left: 4.621vw;
+          width: 3.5546vw;
+          height: 2.488vw;
+        }
+      }
+    }
+    .footer-ellipse {
+      right: -12.666vw;
+      bottom: -26.8vw;
+    }
+  }
+}

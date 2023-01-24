@@ -1,0 +1,17 @@
+{
+  "short_name": "Joystick",
+  "name": "Joystick",
+  "start_url": ".",
+  "homepage": "./",
+  "launch_path": "/public/index.html",
+  "icons": [
+    {
+      "src": "favicon.png",
+      "sizes": "64x64 32x32 24x24 16x16",
+      "type": "image/x-icon"
+    }
+  ],
+  "display": "browser",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}
